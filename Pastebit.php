@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#PasteBit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://codepen.io/P1N2O/pen/xxbjYqx.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -25,9 +28,8 @@
                 <div>
                     <label for="highlighting">Syntax Highlighting</label>
                     <select name="highlighting" id="highlighting">
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="php">PHP</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <div>
@@ -40,6 +42,9 @@
             </form>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
