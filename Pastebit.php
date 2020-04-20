@@ -9,7 +9,7 @@
 <body>
     <div class="all-content">
         <div class="top-column">
-            <h1>###Insert Logo###</h1>
+            <img src="img/PasteBit_logo.png" alt="#PasteBit">
         </div>
         <div class="form">
             <div>
