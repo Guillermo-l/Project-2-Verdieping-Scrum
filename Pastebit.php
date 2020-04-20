@@ -25,8 +25,9 @@
                 <div>
                     <label for="highlighting">Syntax Highlighting</label>
                     <select name="highlighting" id="highlighting">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="php">PHP</option>
                     </select>
                 </div>
                 <div>
