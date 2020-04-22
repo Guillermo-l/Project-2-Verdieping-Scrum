@@ -1,0 +1,46 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial;
+  color: #1e1e1e;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+  animation: gradient 10s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

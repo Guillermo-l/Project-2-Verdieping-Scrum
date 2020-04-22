@@ -1,58 +1,59 @@
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#PasteBit</title>
+    <title>Start pasting</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-    <link rel="stylesheet" href="https://codepen.io/P1N2O/pen/xxbjYqx.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/codepage.css" />
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="home.php"> Home</a></li>
-            <li><a href="Code.php"> Type Uw Gewenste Code </a></li>
-            <li><a href="#"> Test code</a></li>
-            <li><a href="About.php"> About</a></li>
-        </ul>
-    </nav>
     <div class="all-content">
-        <div class="top-column">
-            <img src="img/PasteBit_logo.png" alt="#PasteBit">
+        <div class="header">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="home.php"> Home</a></li>
+                    <li><a href=""> Type Uw Gewenste Code </a></li>
+                    <li><a href="#"> Test code</a></li>
+                    <li><a href="about.php"> About</a></li>
+                </ul>
+            </nav>
+            <img class="logo" src="img/PasteBit_logo.png" alt="#PasteBit" width="10%" height="10%">
         </div>
         <div class="form">
             <div>
-                <p>New Paste</p>
+                <h3>New Paste</h3>
             </div>
-            <form action="">
+            <form action="/Project-2-Verdieping-Scrum/includes/paste.inc.php" method="POST">
                 <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="paste" cols="100" rows="15" required></textarea>
                 </div>
-                <div>
-                    <p>Paste Settings</p>
-                </div>
-                <div>
-                    <label for="highlighting">Syntax Highlighting</label>
-                    <select name="highlighting" id="highlighting">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="pasteName">Paste Name / Title</label>
-                    <input id="pasteName" type="text">
-                </div>
-                <div>
-                    <button type="submit">Create New Paste</button>
+                <div class="form-pt2">
+                    <div>
+                        <h3>Paste Settings</h3>
+                    </div>
+                    <div class="form-input">
+                        <label for="pasteName">Paste Name / Title</label>
+                        <input id="pasteName" type="text" name="pasteName" required autocomplete="off">
+                    </div>
+                    <div class="form-input">
+                        <label for="highlighting">Syntax Highlighting</label>
+                        <select name="highlighting" id="highlighting" required>
+                            <option value="" disabled selected hidden>-- Kies een optie --</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="php">PHP</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <button type="submit" name="submit">Create New PasteBit</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
-    <!-- partial -->
-    <script src="./script.js"></script>
 </body>
 
 </html>
