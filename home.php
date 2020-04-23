@@ -1,3 +1,7 @@
+<!-- <?php
+        include_once "./includes/paste.inc.php";
+        ?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +17,7 @@
 
 
 <body>
+    <?php echo $uniqueid ?>
     <div class="all-content">
         <div class="top-column">
             <img class="logo" src="img/PasteBit_logo.png" alt="#PasteBit">
@@ -31,7 +36,7 @@
             <div>
                 <h3>New Paste</h3>
             </div>
-            <form action="/Project-2-Verdieping-Scrum/includes/paste.inc.php" method="POST">
+            <form action="./includes/paste.inc.php" method="POST">
                 <div>
                     <textarea name="paste" cols="100" rows="10  " required></textarea>
                 </div>
@@ -53,13 +58,38 @@
                         </select>
                     </div>
                     <div class="form-submit">
-                        <button type="submit" name="submit">Create New Paste</button>
+                        <button class="submit" id="submit" type="submit" name="submit">Create New Paste</button>
                     </div>
                 </div>
             </form>
         </div>
+        <div class="pop-up">
+            <div class="pop-up-content">
+                <h4>
+                    Kopieer uw link!
+                </h4>
+                <div>
+                    <input class="link" id="link" type="text" value="<?php echo $link ?>">
+                </div>
+                <div class="copy-div">
+                    <button class="copy" id="copy-button">Kopiëren <img id="copy" src="./img/copy.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="copy-done">
+            <div class="pop-up-content">
+                <div class="close">
+                    <p>+</p>
+                </div>
+                <div>
+                    <h2>Uw link is gekopieërd!</h2>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="./js/pop-up.js"></script>
+    <script src="./js/copy.js"></script>
 
 </body>
 

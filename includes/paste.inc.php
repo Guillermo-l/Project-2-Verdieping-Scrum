@@ -33,7 +33,6 @@ function generateUniqueid($conn)
     return $randStr;
 }
 
-
 $uniqueid = generateUniqueid($conn);
 $paste = $_POST['paste'];
 $pasteTitle = $_POST['pasteName'];
@@ -42,4 +41,6 @@ $syntax = $_POST['highlighting'];
 $sql = "INSERT INTO `pastes`(`uniqueid`, `paste`, `syntax`, `pasteTitle`) VALUES ('$uniqueid', '$paste', '$syntax', '$pasteTitle');";
 mysqli_query($conn, $sql);
 
-header("location: ./code.php?paste=succes");
+header("location: ../home.php");
+$link = "http://localhost/Project-2-Verdieping-Scrum/viewpaste.php?uid=$uniqueid";
+?>
