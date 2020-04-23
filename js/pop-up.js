@@ -7,6 +7,13 @@ document.querySelector('.close').addEventListener('click', function () {
 });
 
 document.getElementById('copy-button').addEventListener('click', function(){
+    document.getElementById('link').select();
+    document.execCommand('copy');
     document.querySelector('.pop-up').style.display = 'none';
     document.querySelector('.copy-done').style.display = 'flex';
 });
+
+// document.getElementById('copy-button').addEventListener('click', function(){
+//     document.getElementById('link').select();
+//     document.execCommand('copy');
+// })

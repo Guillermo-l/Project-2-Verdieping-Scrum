@@ -11,6 +11,7 @@
 
 <body>
     <div class="all-content">
+        
         <div class="header">
             <nav>
                 <ul class="nav_links">
@@ -22,6 +23,7 @@
             </nav>
             <img class="logo" src="img/PasteBit_logo.png" alt="#PasteBit" width="10%" height="10%">
         </div>
+
         <div class="form">
             <div>
                 <h3>New Paste</h3>

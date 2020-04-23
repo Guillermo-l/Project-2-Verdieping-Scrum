@@ -17,7 +17,6 @@
 
 
 <body>
-    <?php echo $uniqueid ?>
     <div class="all-content">
         <div class="top-column">
             <img class="logo" src="img/PasteBit_logo.png" alt="#PasteBit">
@@ -77,11 +76,11 @@
             </div>
         </div>
         <div class="copy-done">
-            <div class="pop-up-content">
+            <div class="pop-up-content-done">
                 <div class="close">
                     <p>+</p>
                 </div>
-                <div>
+                <div class="copy-message">
                     <h2>Uw link is gekopieërd!</h2>
                 </div>
             </div>

@@ -85,6 +85,18 @@ ul li a {
   padding: 10px;
   position: relative;
 }
+
+.pop-up-content-done {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 450px;
+background-color: white;
+border-radius: 5px;
+padding: 10px;
+position: relative;
+}
+
 .copy-done {
   width: 100%;
   height: 100%;
@@ -94,6 +106,10 @@ ul li a {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+}
+
+.copy-message {
+  display: flex;
 }
 
 .close {
