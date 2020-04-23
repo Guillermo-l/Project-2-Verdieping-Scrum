@@ -1,6 +1,7 @@
-<?php
-include_once "./includes/viewpaste.inc.php";
-?>
+<!-- <?php
+        include_once "./includes/viewpaste.inc.php";
+
+        ?> -->
 
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8,7 +9,7 @@ include_once "./includes/viewpaste.inc.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start pasting</title>
+    <title>View Paste</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="./css/viewpaste.css" />
 </head>
@@ -28,7 +29,12 @@ include_once "./includes/viewpaste.inc.php";
         </div>
         <div class="paste">
             <div>
-                <h3>Paste title:  </h3>
+                <h3>Paste title: </h3>
+                <p>
+                    <?php 
+                    echo $pasteShow;
+                     ?>
+                </p>
             </div>
             <div>
             </div>

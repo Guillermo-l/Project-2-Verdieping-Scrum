@@ -48,7 +48,7 @@
                         </select>
                     </div>
                     <div class="form-input">
-                        <button type="submit" name="submit">Create New PasteBit</button>
+                        <button type="submit" name="submit">Create New Paste</button>
                     </div>
                 </div>
             </form>
