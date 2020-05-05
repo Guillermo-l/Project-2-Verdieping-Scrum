@@ -1,7 +1,7 @@
-<!-- <?php
-        include_once "./includes/viewpaste.inc.php";
+<?php
+include "./includes/viewpaste.inc.php";
 
-        ?> -->
+?>
 
 <!DOCTYPE HTML>
 <html lang="en">
@@ -29,12 +29,7 @@
         </div>
         <div class="paste">
             <div>
-                <h3>Paste title: </h3>
-                <p>
-                    <?php 
-                    echo $pasteShow;
-                     ?>
-                </p>
+                <h3>Paste title: <?php echo $pasteShow; ?> </h3>
             </div>
             <div>
             </div>

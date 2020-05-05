@@ -1,3 +1,9 @@
+<?php
+
+include "./includes/paste.inc.php";
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
