@@ -25,7 +25,17 @@
 
     <div class="form">
         <div>
-            <p>Halo Allemaal dit is een Instructie Pagina hier ga ik uitleggen u kunt deze pagina gebruiken in principe moet je eerst in de home pagina zijn vervolgens type uw gewenste code in binnen de velden en vervolgens moet je kiezen welke is de Naam van het code en daarna moet je kiezen welke wil je gebruiken en daarna</p>
+            <p>Halo Allemaal dit is een Instructie Pagina hier ga ik uitleggen u kunt deze pagina gebruiken in principe moet je eerst in de home pagina zijn vervolgens type uw gewenste code in binnen de velden.</p>
+            <br>
+            <img src="img/PasteVeld.png">
+            <br>
+            <p> Daarna moet je het code een naam geven</p>
+            <br>
+            <img src="img/PasteName.png">
+            <br>
+            <p>Je bent bijna klaar nu moet je een Taal kiezen</p>
+            <img src="img/Taal.png">
+            <p>nu is gewoon op het button clicken en je krijgt je eigen link </p>
         </div>
     </div>
 </body>
