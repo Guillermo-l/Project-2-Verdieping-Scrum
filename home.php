@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </form>
-            <p id="result"></p>
+            <!-- <p id="result"></p> -->
         </div>
         <div class="pop-up">
             <div class="pop-up-content">
@@ -64,8 +64,7 @@
                     Kopieer uw link!
                 </h4>
                 <div>
-                    <input class="link" id="link" type="text" value="http://localhost/Project-2-Verdieping-Scrum/viewpaste.php?uid=
-                    <?php $uniqueid ?> ">
+                    <input class="link" id="link" type="text" value="http://localhost/Project-2-Verdieping-Scrum/viewpaste.php?uid=">
                 </div>
                 <div class="copy-div">
                     <button class="copy" id="copy-button">Kopiëren <img id="copy" src="./img/copy.png" alt=""></button>

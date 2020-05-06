@@ -1,5 +1,4 @@
 <?php
-
 $conn = mysqli_connect('localhost', 'root', '', 'paste_bit');
 
 function checkKeys($conn, $randStr)
@@ -47,7 +46,7 @@ if ($conn->connect_error) {
 
 $stmt = $conn->prepare("INSERT INTO pastes (uniqueid, paste, syntax, pasteTitle) VALUES (?, ?, ?, ?)");
 
-$stmt->bind_param($uniqueid, $paste, $syntax, $paste_Title);
+$stmt->bind_param("ssss", $uniqueid, $paste, $syntax, $paste_Title);
 
 if($stmt->execute()) {
     echo "succes";
