@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://codepen.io/P1N2O/pen/xxbjYqx.css" />
     <link rel="stylesheet" href="./css/homepage.css" />
@@ -22,8 +21,7 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="InstructiePagina.php">Instructie pagina</a></li>
-
+                <li><a href="instructiePagina.html">Instructie pagina</a></li>
                 <li><a href="about.php">About</a></li>
             </ul>
         </nav>
@@ -32,9 +30,9 @@
             <div>
                 <h3>New Paste</h3>
             </div>
-            <form action="./includes/paste.inc.php" method="POST">
+            <form action="paste.inc.php" method="post">
                 <div>
-                    <textarea name="paste" cols="100" rows="10  " required></textarea>
+                    <textarea id="paste" name="paste" cols="100" rows="10  " required></textarea>
                 </div>
                 <div class="form-pt2">
                     <div>
@@ -58,6 +56,7 @@
                     </div>
                 </div>
             </form>
+            <p id="result"></p>
         </div>
         <div class="pop-up">
             <div class="pop-up-content">
@@ -65,7 +64,8 @@
                     Kopieer uw link!
                 </h4>
                 <div>
-                    <input class="link" id="link" type="text" value="<?php echo $link ?>">
+                    <input class="link" id="link" type="text" value="http://localhost/Project-2-Verdieping-Scrum/viewpaste.php?uid=
+                    <?php $uniqueid ?> ">
                 </div>
                 <div class="copy-div">
                     <button class="copy" id="copy-button">Kopiëren <img id="copy" src="./img/copy.png" alt=""></button>
@@ -89,25 +89,33 @@
             e.preventDefault();
 
             $.post(
-                './includes/paste.inc.php', {
-                    productname: $("#name").val(),
-                    brandname: $("#brand").val(),
-                    quantity: $("#quantity").val()
+                'paste.inc.php', {
+                    paste: $("#paste").val(),
+                    syntax: $("#highlighting").val(),
+                    pasteTitle: $("#pasteName").val()
                 },
                 function(result) {
                     if (result == "succes") {
-                        $("#result").html("Values inserted successfully");
+                        $("#result").html("error occured");
+                            document.querySelector('.pop-up').style.display = 'flex';
+
+                        document.querySelector('.close').addEventListener('click', function() {
+                            document.querySelector('.copy-done').style.display = 'none';
+                        });
+
+                        document.getElementById('copy-button').addEventListener('click', function() {
+                            document.getElementById('link').select();
+                            document.execCommand('copy');
+                            document.querySelector('.pop-up').style.display = 'none';
+                            document.querySelector('.copy-done').style.display = 'flex';
+                        });
                     } else {
-                        $("#result").html("error occured")
+                        $("#result").html("error occured");
                     }
                 }
             )
         });
     </script>
-
-
-    <script src="./js/pop-up.js"></script>
-    <script src="./js/copy.js"></script>
 
 </body>
 

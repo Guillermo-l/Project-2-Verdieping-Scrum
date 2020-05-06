@@ -1,5 +1,5 @@
 <?php
-include_once "dbh.inc.php";
+include "./dbh.inc.php";
 
 // ?uid=gtl3vdy9
 
@@ -12,6 +12,6 @@ $resultCheck = mysqli_num_rows($result);
 if ($resultCheck > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $pasteShow = $row['paste'];
-        return $pasteShow;
+        
     }
 }
