@@ -1,4 +1,0 @@
-CREATE DATABASE paste_bit;
-
-CREATE TABLE pastes;
-
